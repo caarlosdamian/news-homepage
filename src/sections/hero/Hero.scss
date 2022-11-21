@@ -1,1 +1,57 @@
-@import '../../constants/index.scss'
+@import "../../constants/index.scss";
+
+.hero-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 32px;
+  gap: 24px;
+
+  .hero-img {
+    background-image: url("../../assets/images/image-web-3-mobile.jpg");
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    .hero-header {
+      font-family: $font-extra-bold;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 40px;
+      color: #00001a;
+    }
+
+    .hero-description {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 26px;
+      color: #5e607a;
+      margin-bottom: 8px;
+    }
+
+    .hero-button {
+      background: #f15d51;
+      color: white;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 4.375px;
+      border: none;
+      color: #fffdfa;
+      padding: 14px;
+      &:hover{
+        background: #00001A;
+      }
+    }
+  }
+}
