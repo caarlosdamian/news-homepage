@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "inter-bold";
+  src: local("inter-bold"),
+    url("../assets/fonts/static/Inter-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "inter-extra-bold";
+  src: local("inter-extra-bold"),
+    url("../assets/fonts/static/Inter-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "inter-regular";
+  src: local("inter-regular"),
+    url("../assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "inter-normal";
+  src: local("inter-normal"),
+    url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
+// Colors
+$almost-white: #fffdfa;
+$dark-space: #00001a;
+$gunmetal: #5e607a;
+$light-vermillion: #f15d51;
+$yellow: #e9aa52;
+$silver: #c5c6ce;
+
+// Fonts
+
+$font-normal: inter-normal;
+$font-regular: inter-regular;
+$font-bold: inter-bold;
+$font-extra-bold: inter-extra-bold;
+
+// Fonts sizes
+
+$font-size-40: 40px;
+$font-size-32: 32px;
+$font-size-20: 20px;
+$font-size-18: 18px;
+$font-size-15: 15px;
+$font-size-14: 14px;
+
+// Fonts weight
+
+$font-weight-800: 800;
+$font-weight-700: 700;
+$font-weight-400: 400;
+
+//Fonts height
+
+$line-height-40: 40px;
+$line-height-32: 32px;
+$line-height-26: 26px;
+$line-height-24: 24px;
+
+// Letter spacing
+
+$letter-spacing: 4.375px;
