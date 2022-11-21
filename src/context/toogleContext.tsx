@@ -1,7 +1,25 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
-export const toggle = {
+const dataFix = {
   active: false,
 };
 
-export const ToogleContext = createContext(toggle.active);
+type GlobalContext = {
+  active: boolean;
+  setActive: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export const Tooggle = createContext<GlobalContext>({
+  active: false,
+  setActive: () => {},
+});
+
+export const ToggleProvider = ({ children }: any) => {
+  const [activeState, setActive] = useState(false);
+  console.log(children);
+  return (
+    <Tooggle.Provider value={{ active: activeState, setActive }}>
+      {children}
+    </Tooggle.Provider>
+  );
+};

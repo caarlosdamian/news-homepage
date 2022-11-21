@@ -1,1 +1,50 @@
-@import '../../constants/index.scss'
+@import "../../constants/index.scss";
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-list-container {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    transition: all 5s ease;
+
+    .menu-overlay {
+      background: $dark-space;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      flex: 1;
+    }
+    .menu-list-wrapper {
+      flex: 2;
+      background: $almost-white;
+      padding: 24px;
+      .menu-close {
+        position: fixed;
+        right: 20px;
+        cursor: pointer;
+      }
+      .menu-list {
+        list-style: none;
+        position: fixed;
+        top: 112px;
+        .menu-item {
+          margin-bottom: 24px;
+          cursor: pointer;
+          font-weight: $font-weight-400;
+          font-size: $font-size-18;
+          line-height: $line-height-24;
+          color: $dark-space;
+        }
+      }
+    }
+  }
+}
