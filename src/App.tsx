@@ -1,10 +1,14 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import { Features, Header, Hero, News } from "./sections";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1>tresting</h1>
+      <Header />
+      <Hero />
+      <News />
+      <Features />
     </div>
   );
 }
