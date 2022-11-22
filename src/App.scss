@@ -14,4 +14,13 @@ body {
 
 .App {
   display: grid;
+  @include for-size(tablet-landscape-up) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  @include for-size(desktop-up) {
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 90px 165px;
+  }
 }

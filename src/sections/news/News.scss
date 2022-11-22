@@ -1,1 +1,60 @@
-@import '../../constants/index.scss'
+@import "../../constants/index.scss";
+
+.news-container {
+  padding: 24px 20px;
+  background: $dark-space;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 64px;
+  @include for-size(tablet-landscape-up) {
+    margin-top: 0;
+  }
+
+  .news-header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: $yellow;
+  }
+  .news-grid {
+    display: grid;
+    gap: 30px;
+
+    .item-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 8px;
+      .item-title {
+        font-family: $font-extra-bold;
+        font-weight: $font-weight-800;
+        font-size: $font-size-20;
+        line-height: $line-height-24;
+        color: $almost-white;
+        cursor: pointer;
+        &:hover {
+          color: $yellow;
+        }
+      }
+
+      .item-desc {
+        font-weight: $font-weight-400;
+        font-size: $font-size-15;
+        line-height: $line-height-26;
+        color: $silver;
+      }
+      &:nth-child(1) {
+        border-bottom: 1px solid $gunmetal;
+        padding-bottom: 31px;
+      }
+      &:nth-child(3) {
+        border-top: 1px solid $gunmetal;
+        padding-top: 31px;
+      }
+    }
+  }
+}

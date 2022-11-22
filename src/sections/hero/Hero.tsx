@@ -1,5 +1,4 @@
 import React from "react";
-import HeroImgMobile from '../../assets/images/image-web-3-mobile.jpg'
 import "./Hero.scss";
 
 export const Hero = () => {
